@@ -5,15 +5,17 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text("Profile", style: TextStyle(fontSize: 20),),
-        SizedBox(height: 10,),
-        Icon(Icons.person),
-        SizedBox(height: 5,),
-        Text("Max Mustermann", style: TextStyle(fontSize: 20),)
-      ],
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(height: 20,),
+          Text("Profile", style: TextStyle(fontSize: 20),),
+          SizedBox(height: 10,),
+          Icon(Icons.person),
+          SizedBox(height: 5,),
+          Text("Max Mustermann", style: TextStyle(fontSize: 20),)
+        ],
+      ),
     );
   }
 }

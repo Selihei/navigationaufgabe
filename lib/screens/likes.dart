@@ -5,13 +5,15 @@ class LikesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text("Likes", style: TextStyle(fontSize: 20),),
-        SizedBox(height: 10,),
-        Text("Hier findest du deine gelikten Nachrichten.", softWrap: true, style: TextStyle(fontSize: 15),)
-      ],
+    return Center(
+      child: Column(
+        children: [
+          SizedBox(height: 20,),
+          Text("Likes", style: TextStyle(fontSize: 20),),
+          SizedBox(height: 10,),
+          Text("Hier findest du deine gelikten Nachrichten.", softWrap: true, style: TextStyle(fontSize: 15),)
+        ],
+      ),
     );
   }
 }
